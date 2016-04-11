@@ -6,7 +6,6 @@ require_once dirname(__DIR__).'/../../../../app/AppKernel.php';
 
 use SocialNetworks\ApiBundle\Service\ApiService;
 use Symfony\Bundle\FrameworkBundle\Test;
-use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\HttpKernel\Kernel;
 
 class ApiServiceTest extends \PHPUnit_Framework_TestCase

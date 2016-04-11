@@ -5,7 +5,6 @@ namespace SocialNetworks\ApiBundle\Tests\Service;
 require_once dirname(__DIR__).'/../../../../app/AppKernel.php';
 
 use Symfony\Bundle\FrameworkBundle\Test;
-use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\HttpKernel\Kernel;
 
 class TwitterApiServiceTest extends \PHPUnit_Framework_TestCase

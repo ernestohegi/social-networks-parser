@@ -3,14 +3,11 @@
 namespace SocialNetworks\ApiBundle\Service;
 
 use Buzz\Browser;
-use Sensio\Bundle\BuzzBundle\SensioBuzzBundle;
 
 /**
- * @package SocialNetworks\ApiBundle\Service;
  */
 class ApiService implements ApiServiceInterface
 {
-
     /**
      * HTTP requests.
      *
@@ -42,7 +39,7 @@ class ApiService implements ApiServiceInterface
     public function makeGetRequest($url)
     {
         return $this->buzz->get(
-            $this->getBaseUrl() . $url,
+            $this->getBaseUrl().$url,
             $this->getHeaders()
         );
     }
@@ -57,7 +54,7 @@ class ApiService implements ApiServiceInterface
         }
 
         return $this->buzz->post(
-            $this->getBaseUrl() . $url,
+            $this->getBaseUrl().$url,
             $this->getHeaders(),
             $data
         );
@@ -73,7 +70,7 @@ class ApiService implements ApiServiceInterface
         }
 
         return $this->buzz->put(
-            $this->getBaseUrl() . $url,
+            $this->getBaseUrl().$url,
             $this->getHeaders(),
             $data
         );

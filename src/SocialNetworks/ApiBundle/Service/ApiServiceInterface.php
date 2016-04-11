@@ -13,8 +13,8 @@ interface ApiServiceInterface
 
     /**
      * @param string $url
-     * @param array $data
-     * @param bool $json
+     * @param array  $data
+     * @param bool   $json
      *
      * @return Buzz\Message\Response
      */
@@ -22,8 +22,8 @@ interface ApiServiceInterface
 
     /**
      * @param string $url
-     * @param array $data
-     * @param bool $json
+     * @param array  $data
+     * @param bool   $json
      *
      * @return Buzz\Message\Response
      */

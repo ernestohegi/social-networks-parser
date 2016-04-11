@@ -6,6 +6,10 @@ use Endroid\Twitter\Twitter;
 
 class TwitterApiService implements SocialNetworkApiServiceInterface
 {
+    const STATUSES_KEY = 'statuses/user_timeline';
+    const GET_KEY = 'GET';
+    const DATA_TYPE = 'json';
+
     /**
      * @var Twitter
      */
@@ -13,7 +17,7 @@ class TwitterApiService implements SocialNetworkApiServiceInterface
 
     /**
      * @param Twitter $twitterService
-     * @param int $defaultPostsAmount
+     * @param int     $defaultPostsAmount
      */
     public function __construct(
         Twitter $twitterService,
@@ -26,12 +30,12 @@ class TwitterApiService implements SocialNetworkApiServiceInterface
     public function getStreamContent($user, $postsAmount)
     {
         $response = $this->twitterService->query(
-            'statuses/user_timeline',
-            'GET',
-            'json',
+            self::STATUSES_KEY,
+            self::GET_KEY,
+            self::DATA_TYPE,
             [
                 'screen_name' => $user,
-                'count' => (int) $postsAmount ?: $this->defaultPostsAmount
+                'count' => (int) $postsAmount ?: $this->defaultPostsAmount,
             ]
         );
 
