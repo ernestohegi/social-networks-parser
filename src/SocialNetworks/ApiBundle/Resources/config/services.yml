@@ -1,0 +1,16 @@
+parameters:
+    api_main_path: SocialNetworks\ApiBundle
+
+    # Api
+    social_networks.api_service.class: '%api_main_path%\Service\ApiService'
+    social_networks.twitter_api_service.class: '%api_main_path%\Service\TwitterApiService'
+
+services:
+    # Services
+    social_networks.api_service:
+        class: '%social_networks.api_service.class%'
+        arguments: ['@buzz']
+
+    social_networks.twitter_service:
+        class: '%social_networks.twitter_api_service.class%'
+        arguments: ['@endroid.twitter', '%twitter_default_posts_amount%']

@@ -1,0 +1,11 @@
+social_networks_api:
+    resource: "@SocialNetworksApiBundle/Resources/config/routing.yml"
+    prefix:   /
+
+social_networks_parser:
+    resource: "@SocialNetworksParserBundle/Resources/config/routing.yml"
+    prefix:   /
+
+social_networks_core:
+    resource: "@SocialNetworksCoreBundle/Resources/config/routing.yml"
+    prefix:   /

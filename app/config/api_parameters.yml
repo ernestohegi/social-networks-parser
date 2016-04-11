@@ -1,0 +1,8 @@
+parameters:
+    instagram_client_id: '13dfe45e64ee4d4886f9249591bc63de'
+    instagram_client_secret: '74d588f08040474caf09c89dd60ad306'
+    twitter_api_key: 'iXLf8QPS7Bid4CTl8MrPMkegr'
+    twitter_api_secret: 'Mm69UOqQTkvHjkBvm40Sra29AqQkNJY6pKS7pGWtIvYqk2uMFg'
+    twitter_access_token: '22271310-o6TzKmTpAwaqKtYxdnO73Bva25XqL1PxZa97HG817'
+    twitter_access_token_secret: 'b0RAw8E21tOb5k2egIO8DJZhLIdgp1H82Pr1yBmM4euyg'
+    twitter_default_posts_amount: 100
